@@ -1,148 +1,168 @@
 <!DOCTYPE html>
-<html>
-<head>
-    
-    <title> Piyush - Portfolio</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piyush - Developer Portfolio</title>
 
     <style>
-        body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: rgb(173, 85, 173);
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;400;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 38);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 75px;
+        background-color: rgb(18, 18, 65);
+      }
 
-        header {
-            background-color: #1b1717;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        img {
-            border-radius: 120px;
-            align-self: left;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-decoration: none;
-            
-        }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      .left {
+        font-size: 1.4rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0;
+        align-items: center;
+      }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-            color: antiquewhite;
-            
-        }
+      .firstsection > div {
+        width: 30%;
+      }
 
-        section {
-            padding: 50px;
-        }
+      .leftsection {
+        font-size: 2rem;
+      }
+      .rightsection img {
+        width: 65%;
+        align-self: auto;
+        margin: 0%;
+        padding: 0;
+        float: top;
+        border-radius: 180px;
+      }
+      .purple {
+        color: blueviolet;
+      }
 
-        form {
-            display: grid;
-            grid-gap: 10px;
-        }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(138, 138, 185);
+        font-size: 1.03rem;
+      }
+      #element {
+        color: blueviolet;
+      }
 
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
 
-        button:hover {
-            background-color: #555;
-        }
+main hr{
+  border: 0;
+  background: #9c97f1;
+  margin: 40px 84px;
+  height: 1.2px;
+}
+
+.secondsection h1{
+    font-size: 1.7rem;
+}
+
+.gray{
+  color: gray;
+}
+
+.secondsection .box{
+  background: white;
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.secondsection .vertical{
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 180px;
+}
+
     </style>
-</head>
-<body>
+
+  </head>
+  <body>
     <header>
-        <h1>Hii</h1>
-        <h1>Piyush Kharapkar</h1>
-        <p>Web Developer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="left">Piyush's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Piyush currently pursuing B.tech in CSE ( AI & ML)in Jhulelal institute of Technology ,
-        <p>I am proficient in C , C++ , python and designing and have a huge interest in Artificial intelligence.</p>
-        <img src="piyush.jpeg" alt="piyush" class="photo" align="right" width="250">
-    </section>s
-<br>
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Project 1</h3>
-        <p>I have Made a vendor to consumer website with my 4 other friends , In this website consumer who needs anything like vegitables maps will show the consumer where is the vendor in there area.</p>
-        <h3>Project 2</h3>
-        <p>I have build a Basic dynamic portfolio website.</p>
-        <div id="project-list"></div>
-    </section>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hii My name is <span class="purple">Piyush</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="piyush.jpeg" alt="this is developer image" />
+        </div>
+      </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>PHP</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
+      <hr>
 
-    <section id="contact">
-        <h2>Contact Me :</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+      <section class="secondsection">
+        <span class="gray">What i have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+        <div class="vertical">
+          <img src="developer2.png" alt="">
+          
+        </div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+      </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
+    <!-- Setup and start animation! -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Simulated project data (replace with your actual data)
-            const projects = [
-                { name: "Project 1", description: "Description for Project 1" },
-                { name: "Project 2", description: "Description for Project 2" },
-                // Add more projects as needed
-            ];
-
-            // Populate project section
-            const projectList = document.getElementById("project-list");
-            projects.forEach(project => {
-                const projectItem = document.createElement("div");
-                projectItem.innerHTML = `<h3>${project.name}</h3><p>${project.description}</p>`;
-                projectList.appendChild(projectItem);
-            });
-
-            // Form submission
-            const contactForm = document.getElementById("contact-form");
-            contactForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-                // Add your form submission logic here
-                alert("Form submitted!");
-            });
-        });
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web desinger", "&amp; Java Developer"],
+        typeSpeed: 50,
+      });
     </script>
-</body>
+  </body>
 </html>
