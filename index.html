@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piyush - Developer Portfolio</title>
-
+ 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;400;600&display=swap");
       * {
@@ -109,6 +109,66 @@ main hr{
   margin: 0 180px;
 }
 
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left:-9px;
+}
+
+.vertical-text{
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 19px;
+}
+
+.vertical-dis{
+    position: relative;
+    top: 85px;
+    color: gray;
+    width: 150px;
+    font-size: 14px;
+}
+
+footer{
+  background-color: rgb(59, 4, 59);
+  height: 230px;
+}
+.footer{
+  display: flex;
+  padding: 23px 100px;
+  justify-content: space-evenly;
+}
+
+footer ul{
+  list-style: none;
+}
+
+.footer > div{
+  width: 123px;
+}
+
+.btn-one{
+  background-color: rgb(44, 35, 175);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.btn-two{
+  background-color: rgb(44, 35, 175);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
     </style>
 
   </head>
@@ -134,6 +194,10 @@ main hr{
           Hii My name is <span class="purple">Piyush</span>
           <div>and I am a passionate</div>
           <span id="element"></span>
+          <br>
+          <button class="btn-one">Download resume</button>
+          <button class="btn-two">Visit Github</button>
+
         </div>
         <div class="rightsection">
           <img src="piyush.jpeg" alt="this is developer image" />
@@ -144,17 +208,72 @@ main hr{
 
       <section class="secondsection">
         <span class="gray">What i have done so far</span>
-        <h1>Work Experience</h1>
+        <h1>SKILLS</h1>
         <div class="box">
         <div class="vertical">
-          <img src="developer2.png" alt="">
-          
+          <img class="image-top" src="developer2.png" alt="">
+          <div class="vertical-text">
+            HTML, CSS, Javascipt, React
+          </div>
+          <div class="vertical-dis">
+           I am proficient in front end develoment, i have learnt many and required frontend technologies. 
+          </div>
         </div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-      </div>
+        <div class="vertical">
+          <img class="image-top" src="developer2.png" alt="">
+          <div class="vertical-text">
+            Node.js, Express.js
+          </div>
+          <div class="vertical-dis">
+            I am proficient in back end develoment, which are use in the server side.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="developer2.png" alt="">
+          <div class="vertical-text">
+            Java Developer
+          </div>
+          <div class="vertical-dis">
+            I am proficient in java language in DSA
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+
+<div class="footer">
+  <div class="footer-first">
+<h3>Piyush's developer portfolio</h3>
+  </div>
+  <div class="footer-Second">
+    <ul>
+      <li>Home</li>
+      <li>Skills</li>
+      <li>About</li>
+      <li>Projects</li>
+    </ul>
+  </div>
+  <div class="footer-third">
+    <ul>
+      <li>Home</li>
+      <li>Skills</li>
+      <li>About</li>
+      <li>Projects</li>
+    </ul>
+  </div>
+  <div class="footer-fourth">
+    <ul>
+      <li>Home</li>
+      <li>Skills</li>
+      <li>About</li>
+      <li>Projects</li>
+    </ul>
+  </div>
+</div>
+<div class="text-center"></div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Setup and start animation! -->
