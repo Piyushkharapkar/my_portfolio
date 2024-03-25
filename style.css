@@ -8,6 +8,12 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+
+header{
+  position: sticky;
+  top: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -102,10 +108,24 @@ margin: 0 180px;
 }
 
 .image-top{
-width: 23px;
+width: 50px;
 position: relative;
-top: -32px;
-left:-9px;
+top: -40px;
+left:-22px;
+}
+
+.image-top-one{
+  width: 50px;
+position: relative;
+top: -40px;
+left:-22px;
+}
+
+.image-top-two{
+  width: 50px;
+position: relative;
+top: -40px;
+left:-22px;
 }
 
 .vertical-text{
@@ -158,10 +178,10 @@ width: 630px;
 margin: 11px;
 padding: 12px;
 margin-left: 25%;
-background: none;
+background-color: rgb(192, 201, 209);
 border: 3px solid rgb(61, 46, 129);
     outline: none;
-    border-radius: 7px;
+    border-radius: 8px;
 
 }
 
